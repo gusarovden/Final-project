@@ -13,7 +13,6 @@
 - pytest
 - selenium
 - requests
-- _sqlalchemy_
 - allure
 - config
 
@@ -27,3 +26,4 @@
 - [Подсказка по markdown](https://www.markdownguide.org/basic-syntax/)
 - [Генератор файла .gitignore](https://www.toptal.com/developers/gitignore)
 - [Про pip freeze](https://pip.pypa.io/en/stable/cli/pip_freeze/)
+- [Финальный проект по ручному тестированию](https://qadz12.yonote.ru/share/e3d9b34b-d71e-48f9-8522-2cebd3d906db)
