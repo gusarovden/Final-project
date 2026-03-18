@@ -9,7 +9,7 @@ class APIClient:
 
     def __init__(self):
         # Исправляем os.getenv() на os.environ.get()
-        self.base_url = os.environ.get('API_URL', 'https://web-agr.chitai-gorod.ru/web/api/v1')
+        self.base_url = os.environ.get('API_URL', 'https://web-agr.chitai-gorod.ru/web/api/v2')
         self.session = requests.Session()
         self.auth_token = None
 

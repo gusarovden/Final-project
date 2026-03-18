@@ -13,7 +13,7 @@ load_dotenv()
 
 # Настройки загружаем через os.environ.get()
 BASE_URL = os.environ.get('BASE_URL', 'https://www.chitai-gorod.ru')
-API_URL = os.environ.get('API_URL', 'https://web-agr.chitai-gorod.ru/web/api/v1')
+API_URL = os.environ.get('API_URL', 'https://web-agr.chitai-gorod.ru/web/api/v2')
 COOKIE_DOMAIN = os.environ.get('COOKIE_DOMAIN', '.chitai-gorod.ru')
 HEADLESS = os.environ.get('HEADLESS', 'false').lower() == 'true'
 
