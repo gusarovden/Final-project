@@ -1,10 +1,10 @@
 # Final-project
 
-## Шаблон для автоматизации тестирования на python
+## Документация проекта
 
 ### Шаги
 1. Склонировать проект 'git clone https://github.com/gusarovden/Final-project.git'
-2. Установить зависимости "pip3 install > -r requirements.txt"
+2. Установить зависимости 'pip install -r requirements.txt'
 3. Запустить тесты 'pytest'
 4. Сгенерировать отчет 'allure generate allure-files -o allure-report'
 5. Открыть отчет 'allure open allure-report'
@@ -25,5 +25,6 @@
 ### Полезные ссылки
 - [Подсказка по markdown](https://www.markdownguide.org/basic-syntax/)
 - [Генератор файла .gitignore](https://www.toptal.com/developers/gitignore)
-- [Про pip freeze](https://pip.pypa.io/en/stable/cli/pip_freeze/)
 - [Финальный проект по ручному тестированию](https://qadz12.yonote.ru/share/e3d9b34b-d71e-48f9-8522-2cebd3d906db)
+
+
