@@ -47,6 +47,3 @@ def test_search_book_by_negative_title(main_page,phrase):
         main_page.search_goods(phrase)
     with allure.step("Количество результатов больше 0"):
         assert main_page.get_search_results_count() > 0
-
-
-
