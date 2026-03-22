@@ -13,7 +13,3 @@ MY_HEADERS = {
 }
 
 
-# MY_HEADERS = {
-#     'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL3VzZXItcmlnaHQiLCJzdWIiOjIzMjQ4OTM0LCJpYXQiOjE3NzQwODE4MDcsImV4cCI6MTc3NDA4NTQwNywidHlwZSI6MjAsImp0aSI6IjAxOWQwZjg0LTE1Y2MtN2Q5Zi05ZWY5LWFhMWRiN2RmZWJkZiIsInJvbGVzIjoxMH0.wIMe3wKXVrBPpeV1PLBQN5M7iG3u_0rr67Vxussd8ielSTmJGaYE5fpKidnJ_RGi5Y1wmS0olyVkVcMyqwnk6A51krng9kQHm6-AHtHCX_J-kdan45JIBUHpbzbRvjAwoV3qEZtkk3Gv9op76u-4rHtFZxYcoyGtnmRpx9XRSdQArLfDvmZp7bBVpVax-JwRSxCWCFKly7NFHikhWjyhhOdA9pENwUqV2N3xynZs7c2TNXKgJkVLSZilsge9miAcMxj0CHap2gA_zkZbxM69BDqnQReOfevrCnilJm292O_UxTABm-AtLhGQDu4Cisosh8mY1uc3NxKTPsfEzN4b1A ',
-#     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 YaBrowser/26.3.0.0 Safari/537.36'
-# }
