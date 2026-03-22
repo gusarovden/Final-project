@@ -1,4 +1,7 @@
-allure
+allure_result_all
+allure_result_api
+allure_result_ui
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
