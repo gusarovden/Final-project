@@ -2,6 +2,7 @@ import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 
 
 class Locators:
@@ -10,13 +11,13 @@ class Locators:
     TITLES = (By.CSS_SELECTOR, 'button.search-form__button-search[type="submit"]')
     POPUP_CLOSE = (By.CSS_SELECTOR, '[data-popmechanic-close]')
     CITY_CONFIRM = (By.CSS_SELECTOR, '.chg-app-button--primary.chg-app-button--block')
-
-
+    
 class MainPage:
-    def __init__(self, driver, url):
+    def __init__(self, driver,url):
         self.driver = driver
         self.driver.maximize_window()
         self.driver.get(url)
+        self.wait = WebDriverWait(driver, 15)  # Явное ожидание 15 с
 
     def _wait_for_elements(self, locator, multiple=False, timeout=20):
         if multiple:

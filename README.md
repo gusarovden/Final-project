@@ -36,7 +36,7 @@ pytest.ini - маркеры для запуска pytest
 
 README.md - отчет-инструкция к работе
 
-config.py - конфигурации
+config.py - конфигурации ( пишем в поле "Authorization": "Bearer свой token" token протухает через пол часа )
 
 requirements.txt - зависимости
 
