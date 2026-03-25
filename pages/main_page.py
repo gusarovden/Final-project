@@ -2,13 +2,12 @@ import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 
 
 class Locators:
-    SEARCH_FIELD = (By.CSS_SELECTOR, '.search-form__input[type="text"]')                     
-    SEARCH_BUTTON = (By.CSS_SELECTOR, "[type='submit']")
-    TITLES = (By.CSS_SELECTOR, 'button.search-form__button-search[type="submit"]')
+    SEARCH_FIELD = (By.CSS_SELECTOR, '#app-search')#'.search-form__input[type="text"]')                     
+    SEARCH_BUTTON = (By.CSS_SELECTOR, 'button[type="submit"]')#"[type='submit']")
+    TITLES = (By.CSS_SELECTOR, '.search-button, .btn-search, button[type="submit"]')#'.product-buttons__main-action')#'.product-card')#button.search-form__button-search[type="submit"]')
     POPUP_CLOSE = (By.CSS_SELECTOR, '[data-popmechanic-close]')
     CITY_CONFIRM = (By.CSS_SELECTOR, '.chg-app-button--primary.chg-app-button--block')
     
@@ -17,7 +16,7 @@ class MainPage:
         self.driver = driver
         self.driver.maximize_window()
         self.driver.get(url)
-        self.wait = WebDriverWait(driver, 15)  # Явное ожидание 15 с
+        self.wait = WebDriverWait(driver, 20)  # Явное ожидание 15 с
 
     def _wait_for_elements(self, locator, multiple=False, timeout=20):
         if multiple:
@@ -59,9 +58,8 @@ class MainPage:
         search_button = self._wait_for_elements(Locators.SEARCH_BUTTON, multiple=False)
         search_button.click()
 
+
     @allure.step("Получаем количество элементов в результатах поиска")
     def get_search_results_count(self):
         elements = self._wait_for_elements(Locators.TITLES, multiple=True)
         return len(elements)
-
-

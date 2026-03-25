@@ -1,11 +1,6 @@
 import pytest
 import allure
-from pages.api_page import ApiPage
 
-
-@pytest.fixture
-def api_page():
-    return ApiPage()
 
 @allure.feature("API поиск в Читай‑Город")
 @allure.story("Тестирование поиска товаров")

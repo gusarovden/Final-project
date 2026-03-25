@@ -36,7 +36,8 @@ pytest.ini - маркеры для запуска pytest
 
 README.md - отчет-инструкция к работе
 
-config.py - конфигурации ( пишем в поле "Authorization": "Bearer свой token" token протухает через пол часа )
+config.py - конфигурации 
+
 
 requirements.txt - зависимости
 
@@ -48,6 +49,15 @@ requirements.txt - зависимости
 1. Склонировать проект 'git clone https://github.com/gusarovden/Final-project.git'
 4. Создаем и активируем виртуальное окружение python -m venv venv venv\Scripts\activate
 5. Устанавливаем зависимости из файла requirements.txt. Команда pip install -r requirements.txt
+6. Для API тестов прописываем токен:
+- Заходим на сайт https://www.chitai-gorod.ru/ в любом браузере
+- Открываем DevTools (F12)
+- Заходим во вкладку Network
+- Делаем запрос
+- В окне Name ищем запрос facet-search?
+- Нажимаем и смотрим заголовок "Authorization": "Bearer token"
+- Копируем token и подставляем в переменную  MY_HEADERS в файле config.py.
+ 
 
 #### Запуск API тестов:
 
